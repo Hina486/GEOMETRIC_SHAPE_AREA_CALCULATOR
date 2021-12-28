@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="@string/app_name"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/square3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/square"
+        android:layout_width="152dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="53dp"
+        android:text="@string/square"
+        app:layout_constraintBottom_toTopOf="@+id/square2"
+        app:layout_constraintEnd_toStartOf="@+id/square4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square3"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/square4"
+        android:layout_width="152dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="53dp"
+        android:text="@string/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/square2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/square"
+        app:layout_constraintTop_toBottomOf="@+id/square3"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/square3"
+        android:layout_width="152dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/circle"
+        app:layout_constraintBottom_toTopOf="@+id/square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/square2"
+        android:layout_width="152dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="223dp"
+        android:text="@string/triangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
